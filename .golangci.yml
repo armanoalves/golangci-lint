@@ -1,0 +1,20 @@
+# .golangci.yml
+linters:
+  # Ativa linters específicos
+  enable:
+    - errcheck      # Verifica tratamento de erros
+    - govet         # Analisa código em busca de construções suspeitas
+    - ineffassign   # Identifica atribuições ineficientes
+    - staticcheck   # Análise estática abrangente
+    - unused        # Variáveis e imports não utilizados
+
+# Configuração de tempo limite
+run:
+  timeout: 5m
+  
+# Ignorar alguns problemas em determinados arquivos
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - errcheck
