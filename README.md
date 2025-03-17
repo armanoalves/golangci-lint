@@ -1,4 +1,4 @@
-# GolangCI-Lint Configuration
+# Golangci-lint
 
 Este repositório demonstra como configurar e utilizar o `golangci-lint` em um projeto Go.
 
